@@ -1,4 +1,5 @@
 [build-system]
+
 requires = ["setuptools>=68.2.2", "wheel"]
 
 build-backend = "setuptools.build_meta"
@@ -6,6 +7,7 @@ build-backend = "setuptools.build_meta"
 # %%
 
 [project]
+
 name = "prosphera"
 
 version = "1.0.0"
@@ -18,13 +20,15 @@ authors = [{name = "Volodymyr Holomb", email = "wldmrgml@gmail.com"}]
 
 license = {file = "LICENSE"}
 
+# https://pypi.org/classifiers/
 classifiers = [
     "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python",
     "Topic :: Scientific/Engineering :: Visualization"
 ]
 
-keywords = ["analysis", "clustering", "visualization"]
+keywords = ["visualization", "analysis", "clustering"]
 
 dependencies = [
     "colorcet>=3.0.1",
@@ -41,11 +45,15 @@ requires-python = ">=3.9"
 # %%
 
 [project.urls]
-Homepage = "https://github.com/woldemarg/proshpera"
+
+Source = "https://github.com/woldemarg/proshpera"
+
+Author = "https://www.linkedin.com/in/vholomb"
 
 # %%
 
 [tool.bumpver]
+
 current_version = "1.0.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "Bump version {old_version} -> {new_version}"
@@ -58,6 +66,7 @@ tag = true
 push = false
 
 [tool.bumpver.file_patterns]
+
 "pyproject.toml" = [
     'current_version = "{version}"',
     'version = "{version}"'
@@ -69,4 +78,3 @@ push = false
     "{version}",
     "{pep440_version}",
 ]
-
