@@ -10,7 +10,7 @@ build-backend = "setuptools.build_meta"
 
 name = "prosphera"
 
-version = "1.0.1"
+version = "1.0.2"
 
 description = "Visualize Multidimensional Data on a Sphere"
 
@@ -54,13 +54,13 @@ Author = "https://www.linkedin.com/in/vholomb"
 
 [tool.bumpver]
 
-current_version = "1.0.1"
+current_version = "1.0.2"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "Bump version {old_version} -> {new_version}"
-tag_message = "{new_version}"
-tag_scope = "default"
-pre_commit_hook = ""
-post_commit_hook = ""
+# tag_message = "{new_version}"
+# tag_scope = "default"
+# pre_commit_hook = ""
+# post_commit_hook = ""
 commit = true
 tag = true
 push = false
@@ -73,8 +73,3 @@ push = false
 ]
 
 "src/prosphera/__init__.py" = ["{version}"]
-
-"README.md" = [
-    "{version}",
-    "{pep440_version}",
-]

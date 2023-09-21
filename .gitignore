@@ -1,5 +1,6 @@
 .gitignore
 env_pip
+pyproject.toml
 dist
 
 # Byte-compiled / optimized / DLL files
