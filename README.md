@@ -76,3 +76,16 @@ visualizer.project(
 ```
 ### Browser tab: 
 ![image](https://github.com/woldemarg/proshpera/blob/main/demo/gifs/crop_housing.gif?raw=true)
+
+## Set renderer
+You can set renderer as ```visualizer = Projector(renderer='iframe')``` to save the plot locally as HTML.
+Available renderers:
+- 'jupyterlab'
+- 'vscode'
+- 'notebook'
+- 'kaggle'
+- 'colab'
+and [others](https://plotly.com/python/renderers/)
+
+
+
