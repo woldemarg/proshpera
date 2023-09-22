@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn import datasets
-from sklearn.datasets import make_blobs
-from prosphera.projector import Projector
+from src.prosphera.projector import Projector
 
 # %%
 
@@ -11,7 +10,7 @@ visualizer = Projector()
 # %%
 
 # Generate data
-data, labels = make_blobs(
+data, labels = datasets.make_blobs(
     n_samples=5000,
     centers=50,
     n_features=25,
@@ -58,4 +57,4 @@ housing = datasets.fetch_california_housing()
 
 visualizer.project(
     data=housing['data'],
-    labels=pd.qcut(housing['data'][:, 1], 5).astype(str))
+    labels=pd.cut(housing['target'], 3))
